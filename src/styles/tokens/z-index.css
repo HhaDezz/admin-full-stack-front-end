@@ -1,0 +1,12 @@
+/* Stacking order. Use these, never raw numbers. */
+:root {
+  --z-base: 1;
+  --z-sticky: 30;
+  --z-scrim: 35;
+  --z-sidebar: 40;
+  --z-dropdown: 60;
+  --z-overlay: 100;
+  --z-menu: 150;
+  --z-toast: 200;
+  --z-tooltip: 250;
+}

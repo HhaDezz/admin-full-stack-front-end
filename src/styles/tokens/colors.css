@@ -1,0 +1,84 @@
+/* Colour tokens. Every component reads these; change them here (or with the theme customizer). */
+:root,
+[data-theme='light'] {
+  --bg: #f4f1ea;
+  --surface: #fffdf9;
+  --surface-2: #f9f6ef;
+  --ink: #1b2824;
+  --ink-2: #44514c;
+  --muted: #5f6a65;
+  --line: #e7e1d5;
+  --line-2: #efe9dd;
+  --brand: #1f4d45;
+  --brand-ink: #ffffff;
+  --brand-soft: #e3efea;
+  --accent: #c8663a;
+  --accent-soft: #f8e6dc;
+  --gold: #dca33a;
+  --gold-soft: #f8edd2;
+  --ok: #276b47;
+  --ok-soft: #dff1e6;
+  --warn: #94600f;
+  --warn-soft: #faefd5;
+  --danger: #a83a29;
+  --danger-soft: #f8e1dc;
+  --side-bg: #15302a;
+  --side-ink: #cfdcd7;
+  --side-muted: #85a097;
+  --side-active: rgba(255, 255, 255, 0.09);
+  color-scheme: light;
+  /* Dashboard welcome banner: from the sidebar colour to this. */
+  --hero-to: var(--brand);
+  /* Status tints used by charts and badges */
+  --info: #3d6b9a;
+  --info-soft: #e0ebf6;
+  /* Chart series, in this fixed order (checked for colour-blind separation on --surface).
+     Series keep their colour when others are hidden: colour follows the series, never its rank. */
+  --chart-1: #13866a;
+  --chart-2: #3a72d4;
+  --chart-3: #e0693a;
+  --chart-4: #8e4fc7;
+  --chart-5: #e2a21c;
+  --chart-6: #d64575;
+  /* Sequential scale (heatmaps): one hue, light to dark. */
+  --chart-seq: var(--chart-1);
+  --chart-grid: var(--line-2);
+}
+
+:root[data-theme='dark'],
+[data-theme='dark'] {
+  --bg: #0e1513;
+  --surface: #151f1c;
+  --surface-2: #1a2623;
+  --ink: #e9f0ed;
+  --ink-2: #b9c6c1;
+  --muted: #9caba5;
+  --line: #26332f;
+  --line-2: #1f2b28;
+  --brand: #5fb89f;
+  --brand-ink: #0b1613;
+  --brand-soft: #1d3a33;
+  --accent: #e08455;
+  --accent-soft: #3a2519;
+  --gold: #e8b552;
+  --gold-soft: #36290f;
+  --ok: #62c38c;
+  --ok-soft: #173326;
+  --warn: #e3ad4d;
+  --warn-soft: #36290f;
+  --danger: #ee7d69;
+  --danger-soft: #3b1d17;
+  --side-bg: #0a1210;
+  color-scheme: dark;
+  --hero-to: color-mix(in srgb, var(--brand) 38%, var(--side-bg));
+  --info: #7fb0e0;
+  --info-soft: #1b2d3f;
+  --chart-1: #2b9e80;
+  --chart-2: #5a8de4;
+  --chart-3: #d4673a;
+  --chart-4: #a079dc;
+  --chart-5: #bd8a1f;
+  --chart-6: #d9628b;
+  --chart-seq: #3fb592;
+  --chart-grid: var(--line);
+}

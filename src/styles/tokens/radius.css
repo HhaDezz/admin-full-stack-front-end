@@ -1,0 +1,10 @@
+/* Radius: one multiplier (--radius-scale) drives every corner. */
+:root {
+  --radius-scale: 1;
+  --radius-sm: calc(6px * var(--radius-scale));
+  --radius-md: calc(10px * var(--radius-scale));
+  --radius-lg: calc(14px * var(--radius-scale));
+  --radius-xl: calc(20px * var(--radius-scale));
+  --radius-full: 999px;
+  --radius: var(--radius-lg);
+}
