@@ -1,0 +1,115 @@
+/* Sign-in, sign-up, password reset, email confirmation and lock screen. */
+.auth-brand-sm {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: var(--space-6);
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+}
+.auth-brand-sm .brand-mark {
+  width: 32px;
+  height: 32px;
+  font-size: 17px;
+}
+@media (max-width: 920px) {
+  .auth-brand-sm {
+    display: inline-flex;
+  }
+}
+.auth-head {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+  margin-bottom: var(--space-6);
+}
+.auth-head h1 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.auth-head p a {
+  color: var(--brand);
+  font-weight: var(--weight-semibold);
+}
+.login-card .kform {
+  gap: var(--space-4);
+}
+.auth-alt {
+  margin-top: var(--space-5);
+  text-align: center;
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+.auth-alt a,
+.auth-alt .link {
+  color: var(--brand);
+  font-weight: var(--weight-semibold);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.auth-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  margin-bottom: var(--space-4);
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+.auth-icon.is-ok {
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+.auth-icon.is-warn {
+  background: var(--warn-soft);
+  color: var(--warn);
+}
+.auth-actions {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+}
+.auth-actions .auth-alt {
+  margin-top: var(--space-2);
+}
+.auth-form {
+  align-items: stretch;
+}
+.auth-form > .link {
+  justify-self: center;
+  align-self: center;
+}
+.auth-pin {
+  display: flex;
+  justify-content: center;
+}
+.lock-who {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+.lock-who h1 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  margin-top: var(--space-3);
+}
+.demo-inbox {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+  border-style: solid;
+  border-color: color-mix(in srgb, var(--brand) 35%, var(--line));
+  background: color-mix(in srgb, var(--brand-soft) 45%, var(--surface));
+}
+.demo-inbox b {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
