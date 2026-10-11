@@ -1,0 +1,16 @@
+{
+  "name": "atelier-docs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Documentation site for Anjana Admin (VitePress).",
+  "scripts": {
+    "gen": "node scripts/gen-components.mjs",
+    "dev": "npm run gen && vitepress dev",
+    "build": "npm run gen && vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  }
+}
